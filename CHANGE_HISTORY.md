@@ -37,6 +37,8 @@ std::vector<UniValue> myGetBlockbatch(const int heightStart, const int heightEnd
 int post(const std::string& host, const std::string& port, const std::string& page, const std::string& data, std::string& response_data);
 ```
 
+Modify ProcessNewBlock method to send new block to kafka by order.
+
 # client.cpp
 CRPCConvertParam vRPCConvertParams method array is added two new methods:
 

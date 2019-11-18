@@ -114,6 +114,18 @@ libqrencode (optional) can be installed with:
 Once these are installed, they will be found by configure and a bitcoin-qt executable will be
 built by default.
 
+### Centos 
+
+The python 3.6 upgrade requires a repository (since centos7 defaults to python2.7)
+```
+yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+yum install -y python36u python36u-libs python36u-devel python36u-pip
+```
+Build requirements:
+```
+yum install gcc-c++ libtool make autoconf automake openssl-devel libevent-devel boost-devel libdb4-devel libdb4-cxx-devel python3  screen  miniupnpc-devel qt5-qttools-devel qt5-qtbase-devel protobuf-devel qrencode-devel  git
+```
+
 
 ### Fedora
 
